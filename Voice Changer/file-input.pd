@@ -1,0 +1,32 @@
+#N canvas -12 -12 1920 936 10;
+#X obj 105 107 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 105 176 openpanel;
+#X obj 105 384 outlet~;
+#X text 122 106 File input;
+#X obj 41 89 inlet;
+#X msg 242 272 stop;
+#X obj 208 107 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 225 106 Stop;
+#X obj 324 90 inlet;
+#X msg 105 210 read -resize \$1 sound;
+#X obj 105 246 soundfiler;
+#X obj 105 327 tabplay~ sound;
+#X obj 310 22 table sound;
+#X obj 164 279 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 105 279 bang;
+#X connect 0 0 1 0;
+#X connect 1 0 9 0;
+#X connect 4 0 0 0;
+#X connect 5 0 11 0;
+#X connect 6 0 5 0;
+#X connect 8 0 6 0;
+#X connect 9 0 10 0;
+#X connect 10 0 14 0;
+#X connect 11 0 2 0;
+#X connect 11 1 13 0;
+#X connect 13 0 11 0;
+#X connect 14 0 11 0;
+#X coords 0 -1 1 1 155 30 2 100 100;

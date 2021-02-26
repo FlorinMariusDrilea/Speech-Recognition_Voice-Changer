@@ -1,0 +1,19 @@
+#N canvas 838 23 734 707 10;
+#X floatatom 263 131 5 0 0 0 - - -;
+#X obj 115 132 hsl 128 15 0 10000 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 0 1;
+#X obj 104 61 inlet~;
+#X obj 104 225 outlet~;
+#X text 109 115 0;
+#X obj 222 62 inlet;
+#X obj 104 197 hip~;
+#X text 118 115 CUT-OFF FREQUENCY;
+#X text 224 116 10 \, 0;
+#X text 106 100 HIGH-PASS FILER;
+#X connect 0 0 1 0;
+#X connect 0 0 6 1;
+#X connect 1 0 0 0;
+#X connect 2 0 6 0;
+#X connect 5 0 0 0;
+#X connect 6 0 3 0;
+#X coords 0 -1 1 1 210 55 2 100 100;

@@ -1,0 +1,23 @@
+#N canvas 911 278 427 320 10;
+#X obj 102 194 adc~;
+#X obj 161 210 *~;
+#X obj 105 107 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 161 245 outlet~;
+#X text 124 106 Live input;
+#X obj 64 90 inlet;
+#X obj 255 90 inlet;
+#X obj 199 107 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 217 106 Stop;
+#X msg 145 166 1;
+#X msg 199 165 0;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 2 0 9 0;
+#X connect 5 0 2 0;
+#X connect 6 0 7 0;
+#X connect 7 0 10 0;
+#X connect 9 0 1 1;
+#X connect 10 0 1 1;
+#X coords 0 -1 1 1 150 30 2 100 100;

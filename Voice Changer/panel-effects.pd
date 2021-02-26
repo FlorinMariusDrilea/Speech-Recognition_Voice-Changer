@@ -1,0 +1,23 @@
+#N canvas -192 98 1920 936 10;
+#X obj 45 71 bng 15 250 50 0 empty empty empty 17 7 0 10 -260097 -1
+-1;
+#X obj 45 43 bng 15 250 50 0 empty empty empty 17 7 0 10 -135169 -1
+-1;
+#X msg 46 127 20;
+#X msg 46 158 80;
+#X msg 45 191 250;
+#X obj 90 158 outlet;
+#X text 42 21 DELAY FILTERS;
+#X obj 198 121 outlet;
+#X msg 198 86 1;
+#X text 66 41 ECHO;
+#X text 65 70 PHASING;
+#X connect 0 0 2 0;
+#X connect 0 0 8 0;
+#X connect 1 0 4 0;
+#X connect 1 0 8 0;
+#X connect 2 0 5 0;
+#X connect 3 0 5 0;
+#X connect 4 0 5 0;
+#X connect 8 0 7 0;
+#X coords 0 -1 1 1 125 80 2 25 20;

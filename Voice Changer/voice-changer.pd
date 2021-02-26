@@ -1,0 +1,2 @@
+#N canvas 550 92 865 572 10;
+#X obj -192 -789 voice-changer-GUI;

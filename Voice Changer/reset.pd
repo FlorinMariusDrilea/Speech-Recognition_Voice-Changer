@@ -1,0 +1,15 @@
+#N canvas -12 -12 1920 936 10;
+#X obj 134 131 bng 15 250 50 0 empty empty empty 17 7 0 10 -99865 -1
+-1;
+#X text 114 106 RESET ALL;
+#X obj 134 196 outlet;
+#X msg 134 166 0;
+#X obj 32 114 inlet;
+#X msg 234 146 10000;
+#X obj 234 200 outlet;
+#X connect 0 0 3 0;
+#X connect 0 0 5 0;
+#X connect 3 0 2 0;
+#X connect 4 0 0 0;
+#X connect 5 0 6 0;
+#X coords 0 -1 1 1 85 60 2 100 100;

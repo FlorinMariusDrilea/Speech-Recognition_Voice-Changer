@@ -1,0 +1,24 @@
+#N canvas -12 -12 1920 936 10;
+#X obj 81 208 delwrite~ delayline 1000;
+#X obj -6 274 +~;
+#X obj 9 240 vd~ delayline;
+#X obj 9 197 sig~;
+#X floatatom 9 111 5 0 0 0 - - -;
+#X obj 67 110 hsl 128 15 1 1000 1 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 82 257 inlet~;
+#X obj -6 306 outlet~;
+#X text 62 91 1;
+#X text 171 92 1000;
+#X obj 82 166 inlet~;
+#X text 105 90 DELAY;
+#X connect 1 0 7 0;
+#X connect 2 0 1 1;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;
+#X connect 4 0 5 0;
+#X connect 5 0 4 0;
+#X connect 6 0 0 0;
+#X connect 6 0 1 0;
+#X connect 10 0 0 0;
+#X coords 0 -1 1 1 200 45 2 2 90;

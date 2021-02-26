@@ -1,0 +1,30 @@
+#N canvas 838 23 734 707 10;
+#X floatatom 263 131 5 0 0 0 - - -;
+#X obj 115 132 hsl 128 15 0 10000 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 0 1;
+#X obj 104 223 bp~;
+#X floatatom 261 162 5 0 0 0 - - -;
+#X obj 114 163 hsl 128 15 0 100 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X text 175 147 Q;
+#X obj 104 61 inlet~;
+#X obj 104 260 outlet~;
+#X text 110 147 0;
+#X text 230 147 100;
+#X text 109 115 0;
+#X text 222 116 10 \, 0;
+#X obj 279 62 inlet;
+#X obj 222 62 inlet;
+#X text 120 115 CENTRE-FREQUENCY;
+#X text 106 100 BAND-PASS FILER;
+#X connect 0 0 2 1;
+#X connect 0 0 1 0;
+#X connect 1 0 0 0;
+#X connect 2 0 7 0;
+#X connect 3 0 2 2;
+#X connect 3 0 4 0;
+#X connect 4 0 3 0;
+#X connect 6 0 2 0;
+#X connect 12 0 3 0;
+#X connect 13 0 0 0;
+#X coords 0 -1 1 1 210 85 2 100 100;
